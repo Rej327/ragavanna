@@ -1,3 +1,4 @@
+import Smallcircle from "@/app/styleDiv/Smallcircle";
 import { heroData } from "../data/data";
 
 export default function HeroContext() {
@@ -13,7 +14,7 @@ export default function HeroContext() {
         </p>
       </div>
       {heroData.map((herodata) => (
-        <div className="my-10">
+        <div className="mt-10">
           <p className="text-2xl font-extrabold text-gray-900 tracking-wider my-2">
             {herodata.name}
           </p>
@@ -25,6 +26,9 @@ export default function HeroContext() {
           </p>
         </div>
       ))}
+      <div className="my-10">
+        <Smallcircle />
+      </div>
     </div>
   );
 }
