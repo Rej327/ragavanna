@@ -3,7 +3,7 @@ import HeroContext from "../components/HeroContext";
 
 export default function Hero() {
   return (
-    <div className="flex mx-auto w-full">
+    <div className="md:flex mx-auto w-full">
       <HeroImg />
       <HeroContext />
     </div>
