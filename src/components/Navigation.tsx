@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineClose } from "react-icons/md";
 
 export default function Navigation() {
   const [nav, setNav] = useState(false);
@@ -16,28 +17,31 @@ export default function Navigation() {
         onClick={handleNav}
         className="text-3xl cursor-pointer"
       />
-
       <div
         onClick={handleNav}
         className={
           nav
-            ? "z-[1000] fixed animate-pulse top-0 w-full h-full bg-black bg-opacity-50 ease-in-out duration-1000"
-            : "z-[1000] hidden animate-pulse top-0 w-full duration-1000 h-full  bg-black bg-opacity-50 fixed rounde-md"
+            ? "z-[1] fixed top-0 h-full w-full bg-black opacity-70 duration-1000"
+            : "z-[-1] fixed top-0 h-full w-full opacity-70 duration-1000"
+        }
+      ></div>
+      <div
+        onClick={handleNav}
+        className={
+          nav
+            ? "z-10 fixed left-0 top-0 px-4 w-full sm:w-64 h-full ease-in-out duration-1000 bg-black"
+            : "z-10 fixed -left-full top-0 px-4 w-full sm:w-64 h-full ease-in-out duration-1000 bg-black"
         }
       >
-        {/* <div
-          className={
-            nav
-              ? " ease-in-out left-0 top-0 w-full md:w-80 h-full p-4 bg-black text-white"
-              : "ease-in-out -left-full top-0 w-full md:w-80 h-full p-4 bg-black text-white"
-          }
-        >
-          <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
-          </ul>
-        </div> */}
+        <MdOutlineClose
+          onClick={handleNav}
+          className="text-white text-3xl mt-5 cursor-pointer ml-auto"
+        />
+        <ul className=" my-[11%]">
+          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
+            Home
+          </li>
+        </ul>
       </div>
     </div>
   );
