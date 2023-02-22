@@ -2,7 +2,7 @@ import { latestEvent } from "@/data/data";
 
 export default function LatestEvents() {
   return (
-    <div className="w-full bg-gray-900 px-4 py-8">
+    <div className="w-full bg-[#292e33] px-4 py-8">
       <h1 className=" text-white text-4xl md:text-7xl">Category Section</h1>
       {latestEvent.map((ltsEvent) => (
         <div className="md:flex px-2 my-4 py-8">
