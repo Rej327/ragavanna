@@ -6,7 +6,7 @@ export default function Message() {
       <div className="w-fit mx-auto py-10">
         <Smallcircle />
       </div>
-      <h1 className="text-7xl text-white text-center max-w-[42rem] tracking-wide mx-auto">
+      <h1 className="text-4xl sm:text-7xl text-white text-center max-w-[42rem] tracking-wide mx-auto">
         DJ Night is Your Best Choice For Luxury Destination Weddings, Private,
         and Corporate Events
       </h1>
