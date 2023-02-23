@@ -8,7 +8,7 @@ export default function Biography() {
   return (
     <div className="w-full h-full">
       <div className="grid grid-cols-2 w-full overflow-hidden">
-        <div className="pl-2 mt-10 ml-22 md:mt-15 md:ml-27 lg:mt-20 lg:ml-32">
+        <div className="pl-2 -z-10 mt-10 ml-22 md:mt-15 md:ml-27 lg:mt-20 lg:ml-32">
           <Stripecircle />
         </div>
         <div className="w-fit ml-auto mt-[38rem] md:pr-2">
