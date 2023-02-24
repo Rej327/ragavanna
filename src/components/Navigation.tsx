@@ -41,6 +41,16 @@ export default function Navigation() {
           <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
             Home
           </li>
+          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
+            Events
+          </li>
+          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
+            Biography
+          </li>
+          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
+            Events
+          </li>
+          Apply Event
         </ul>
       </div>
     </div>
