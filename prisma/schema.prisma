@@ -14,6 +14,5 @@ model Post {
   id        Int     @id @default(autoincrement())
   image     String
   event     String
-  content   String
   date      String
 } 
