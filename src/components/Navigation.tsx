@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
@@ -47,10 +48,14 @@ export default function Navigation() {
           <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
             Biography
           </li>
+          <Link href="/AddEvent">
+            <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
+              Add Event
+            </li>
+          </Link>
           <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
-            Events
+            Apply Event
           </li>
-          Apply Event
         </ul>
       </div>
     </div>

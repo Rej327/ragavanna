@@ -1,5 +1,3 @@
-import { latestEvent } from "@/data/data";
-
 async function getPosts() {
   const res = await fetch("http://localhost:3000/api/getPosts");
   if (res.ok) {
@@ -10,12 +8,18 @@ async function getPosts() {
 
 export default async function LatestEvents() {
   const data: {
-    id: number;
     event: string;
-    content: string;
     date: string;
     image: string;
   }[] = await getPosts();
+
+  if (!data) {
+    return (
+      <div>
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full bg-[#292e33] px-4 py-8">
