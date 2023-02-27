@@ -1,10 +1,26 @@
 import { latestEvent } from "@/data/data";
 
-export default function LatestEvents() {
+async function getPosts() {
+  const res = await fetch("http://localhost:3000/api/getPosts");
+  if (res.ok) {
+    console.log();
+  }
+  return res.json();
+}
+
+export default async function LatestEvents() {
+  const data: {
+    id: number;
+    event: string;
+    content: string;
+    date: string;
+    image: string;
+  }[] = await getPosts();
+
   return (
     <div className="w-full bg-[#292e33] px-4 py-8">
       <h1 className=" text-white text-4xl md:text-7xl">Category Section</h1>
-      {latestEvent.map((ltsEvent) => (
+      {data.map((ltsEvent) => (
         <div className="md:flex px-2 my-4 py-8">
           <img
             src={ltsEvent.image}
@@ -19,7 +35,7 @@ export default function LatestEvents() {
               {ltsEvent.date}
             </p>
             <button className="text-2xl tracking-wider border-2 py-2 px-6 cursor-pointer font-semibold hover:text-gray-900 hover:bg-white">
-              {ltsEvent.btntxt}
+              MORE
             </button>
           </div>
         </div>
