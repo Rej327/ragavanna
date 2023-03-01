@@ -1,12 +1,6 @@
-import Footer from "@/section/Footer";
-import Navbar from "@/section/Navbar";
-import "./globals.css";
+import "@/app/globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       {/*
@@ -15,9 +9,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <div>{children}</div>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import Smallcircle from "@/app/styleDiv/Smallcircle";
 import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -42,20 +43,15 @@ export default function Navigation() {
           <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
             Home
           </li>
+
           <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
             Events
           </li>
-          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
-            Biography
-          </li>
-          <Link href="/AddEvent">
+          <Link href="/addevent">
             <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
               Add Event
             </li>
           </Link>
-          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
-            Apply Event
-          </li>
         </ul>
       </div>
     </div>

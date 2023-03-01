@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
+html {
   font-family: "BenchNine", sans-serif;
   letter-spacing: 0.05rem;
 }
