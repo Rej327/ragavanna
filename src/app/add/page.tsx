@@ -1,7 +1,7 @@
 "use client";
 
 import Smallcircle from "../styleDiv/Smallcircle";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export const metadata = {
