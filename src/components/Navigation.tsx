@@ -40,14 +40,16 @@ export default function Navigation() {
           className="text-white text-3xl mt-5 cursor-pointer ml-auto"
         />
         <ul className=" my-[11%]">
-          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
-            Home
-          </li>
+          <Link href="/">
+            <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
+              Home
+            </li>
+          </Link>
 
           <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
             Events
           </li>
-          <Link href="/addevent">
+          <Link href="/add">
             <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
               Add Event
             </li>
