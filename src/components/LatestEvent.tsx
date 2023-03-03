@@ -1,4 +1,5 @@
 import Loader from "@/app/styleDiv/Loader";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 async function getPosts() {
@@ -33,17 +34,27 @@ export default function LatestEvents() {
         .reverse()
         .slice(0, 3)
         .map((ltsEvent) => (
-          <div className="md:flex px-2 my-4 py-8">
-            <img
+          <div key={ltsEvent.id} className="md:flex px-2 my-4 py-8">
+            <Image
+              key={ltsEvent.id}
               src={ltsEvent.image}
               alt="/"
-              className="w-full h-56 md:w-[235px] md:h-[235px] border-2"
+              width={235}
+              style={{ objectFit: "cover" }}
+              height={235}
+              className=" w-[235px] h-[235px] mx-auto sm:mx-0 border-2"
             />
             <div className="text-white md:px-8 my-auto">
-              <p className="text-5xl lg:text-7xl mt-2 sm:pt-0 tracking-wide">
+              <p
+                key={ltsEvent.id}
+                className="text-5xl lg:text-7xl mt-2 sm:pt-0 tracking-wide"
+              >
                 {ltsEvent.event}
               </p>
-              <p className="text-3xl lg:text-5xl tracking-wide py-4">
+              <p
+                key={ltsEvent.id}
+                className="text-3xl lg:text-5xl tracking-wide py-4"
+              >
                 {ltsEvent.date}
               </p>
               <button className="text-2xl tracking-wider border-2 py-2 px-6 cursor-pointer font-semibold hover:text-gray-900 hover:bg-white">

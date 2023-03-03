@@ -13,8 +13,8 @@ export default function HeroContext() {
           <i>We have everything to make your event bright!</i>
         </p>
       </div>
-      {heroData.map((herodata) => (
-        <div className="mt-10">
+      {heroData.map((herodata, index) => (
+        <div key={index} className="mt-10">
           <p className="text-2xl font-extrabold text-gray-900 tracking-wider my-2">
             {herodata.name}
           </p>
