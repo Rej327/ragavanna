@@ -28,7 +28,7 @@ export default function Add() {
 
   const [keyPass, setKeyPass] = useState("");
 
-  const hiddenKey = "123456";
+  const hiddenKey = "ReGavannA";
   if (hiddenKey === keyPass) {
     return (
       <form
@@ -46,14 +46,14 @@ export default function Add() {
         <input
           type="text"
           onChange={(e) => setDate(e.target.value)}
-          placeholder="Month / Day / Year"
+          placeholder="Month / Day / Year | Place"
           className="p-1 text-center tracking-wider text-lg"
           value={date}
         />
         <input
           type="text"
           onChange={(e) => setImage(e.target.value)}
-          placeholder="Image"
+          placeholder="Image Link"
           className="p-1 text-center tracking-wider text-lg"
           value={image}
         />

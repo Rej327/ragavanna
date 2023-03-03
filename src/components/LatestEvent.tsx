@@ -1,3 +1,6 @@
+import Loader from "@/app/styleDiv/Loader";
+import { useEffect, useState } from "react";
+
 async function getPosts() {
   const res = await fetch("http://localhost:3000/api/getPosts");
   if (res.ok) {
@@ -6,25 +9,26 @@ async function getPosts() {
   return res.json();
 }
 
-export default async function LatestEvents() {
-  const data: {
-    event: string;
-    date: string;
-    image: string;
-  }[] = await getPosts();
+export default function LatestEvents() {
+  const [dataState, setDataState] = useState<any[]>([]);
 
-  if (!data) {
-    return (
-      <div>
-        <h1>Loading...</h1>
-      </div>
-    );
-  }
+  const dta = async () => {
+    const data: {
+      event: string;
+      date: string;
+      image: string;
+    }[] = await getPosts();
+    setDataState(data);
+  };
+  useEffect(() => {
+    dta();
+  }, []);
 
   return (
     <div className="w-full bg-[#292e33] px-4 py-8">
       <h1 className=" text-white text-4xl md:text-7xl">Category Section</h1>
-      {data.map((ltsEvent) => (
+      {dataState.length <= 0 && <Loader />}
+      {dataState.map((ltsEvent) => (
         <div className="md:flex px-2 my-4 py-8">
           <img
             src={ltsEvent.image}

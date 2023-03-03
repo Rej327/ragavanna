@@ -12,7 +12,7 @@ datasource db {
 
 model Post {
   id        Int     @id @default(autoincrement())
-  image     String
   event     String
   date      String
+  image     String
 } 
