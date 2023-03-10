@@ -1,8 +1,8 @@
 "use client";
 
-import Loader from "@/app/styleDiv/Loader";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import LoaderEvent from "../styleDiv/LoaderEvent";
 
 async function getPosts() {
   const res = await fetch("http://localhost:3000/api/getPosts");
@@ -32,7 +32,7 @@ export default function allEvents() {
       <h1 className=" text-center text-white text-4xl md:text-7xl">
         All Events
       </h1>
-      {dataState.length <= 0 && <Loader />}
+      {dataState.length <= 0 && <LoaderEvent />}
       {dataState
         .slice(0)
         .reverse()
