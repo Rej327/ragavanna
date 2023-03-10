@@ -45,10 +45,11 @@ export default function Navigation() {
               Home
             </li>
           </Link>
-
-          <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
-            Events
-          </li>
+          <Link href="/allEvents">
+            <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
+              Events
+            </li>
+          </Link>
           <Link href="/add">
             <li className="py-2 text-center text-2xl text-white font-semibold tracking-widest cursor-pointer hover:text-gray-400 duration-300">
               Add Event

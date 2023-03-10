@@ -1,6 +1,7 @@
+"use client";
+
 import Loader from "@/app/styleDiv/Loader";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 async function getPosts() {
@@ -11,7 +12,7 @@ async function getPosts() {
   return res.json();
 }
 
-export default function LatestEvents() {
+export default function allEvents() {
   const [dataState, setDataState] = useState<any[]>([]);
 
   const dta = async () => {
@@ -28,12 +29,13 @@ export default function LatestEvents() {
 
   return (
     <div id="event" className="w-full bg-[#292e33] px-4 py-8">
-      <h1 className=" text-white text-4xl md:text-7xl">Category Section</h1>
+      <h1 className=" text-center text-white text-4xl md:text-7xl">
+        All Events
+      </h1>
       {dataState.length <= 0 && <Loader />}
       {dataState
         .slice(0)
         .reverse()
-        .slice(0, 3)
         .map((ltsEvent) => (
           <div key={ltsEvent.id} className="md:flex px-2 my-4 py-8">
             <Image
@@ -58,11 +60,6 @@ export default function LatestEvents() {
               >
                 {ltsEvent.date}
               </p>
-              <Link href="/allEvents">
-                <button className="text-2xl tracking-wider border-2 py-2 px-6 cursor-pointer font-semibold hover:text-gray-900 hover:bg-white">
-                  MORE
-                </button>
-              </Link>
             </div>
           </div>
         ))}
