@@ -1,6 +1,6 @@
 import AboutUs from "@/components/AboutUs";
 
-export default function () {
+export default function About() {
   return (
     <div>
       <AboutUs />
