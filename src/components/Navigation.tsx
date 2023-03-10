@@ -1,6 +1,5 @@
 "use client";
 
-import Smallcircle from "@/app/styleDiv/Smallcircle";
 import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";

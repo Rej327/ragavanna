@@ -12,7 +12,7 @@ async function getPosts() {
   return res.json();
 }
 
-export default function allEvents() {
+export default function AllEvents() {
   const [dataState, setDataState] = useState<any[]>([]);
 
   const dta = async () => {

@@ -4,17 +4,17 @@ export default function ContactUs() {
       <h1 className="text-7xl text-white">Contact Us</h1>
       <div className="py-4 sm:flex gap-10 max-w-[25rem] mx-auto">
         <p className="underline underline-offset-8 text-4xl py-5 text-white hover:no-underline hover:text-stone-200 w-fit mx-auto">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             Facebook
           </a>
         </p>
         <p className="underline underline-offset-8 text-4xl py-5 text-white hover:no-underline hover:text-stone-200 w-fit mx-auto">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
             Instagram
           </a>
         </p>
         <p className="underline underline-offset-8 text-4xl py-5 text-white hover:no-underline hover:text-stone-200 w-fit mx-auto">
-          <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+          <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
             Twitter
           </a>
         </p>

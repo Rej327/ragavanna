@@ -1,5 +1,6 @@
 import Largecircle from "@/app/styleDiv/Largecircle";
 import Stripecircle from "@/app/styleDiv/Stripecircle";
+import Image from "next/image";
 
 export default function AboutUs() {
   return (
@@ -17,8 +18,10 @@ export default function AboutUs() {
         </button>
       </div>
       <div className="p-5 md:px-32 lg:px-80 lg:mt-14">
-        <img
-          src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/4a12be53a0455a7d90f6ac21/xccccc.jpg"
+        <Image
+          src="/about-us.jpg"
+          width={700}
+          height={700}
           alt="Us"
           className="mx-auto lg:mt-10"
         />
