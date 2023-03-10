@@ -14,3 +14,4 @@ export default function Stripecircle() {
     </div>
   );
 }
+Stripecircle.displayName = "Stripecircle";
