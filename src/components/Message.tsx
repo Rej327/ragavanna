@@ -6,15 +6,11 @@ export default function Message() {
       <div className="w-fit mx-auto py-10">
         <Smallcircle />
       </div>
-      <h1 className="text-4xl sm:text-7xl text-white text-center max-w-[42rem] tracking-wide mx-auto">
-        DJ Night is Your Best Choice For Luxury Destination Weddings, Private,
+      <h1 className="text-4xl sm:text-7xl text-white text-center px-2 max-w-[43rem] tracking-wide mx-auto">
+        Regavana Band is Your Best Choice For Luxury Events, Weddings, Private,
         and Corporate Events
       </h1>
-      <div className="w-fit mx-auto py-10">
-        <button className="text-2xl text-white tracking-wider border-2 py-2 px-6 cursor-pointer font-semibold hover:text-gray-900 hover:bg-white">
-          LEARN MORE
-        </button>
-      </div>
+      <div className="w-fit mx-auto py-10"></div>
     </div>
   );
 }

@@ -6,15 +6,15 @@ type heroDataProps = {
 
 export const heroData: heroDataProps[] = [
   {
-    name: "FirstName LastName",
+    name: "Gerard Vincent Lorca",
     email: "sample@gmail.com",
-    number: "(+63)-950-243-3069",
+    number: "(+63)-999-999-9999",
   },
 
   {
-    name: "FirstName LastName",
+    name: "Mae Angelou Holgado",
     email: "sample@gmail.com",
-    number: "(+63)-950-243-3069",
+    number: "(+63)-999-999-9999",
   },
 ];
 

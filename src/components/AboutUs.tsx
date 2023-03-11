@@ -8,14 +8,11 @@ export default function AboutUs() {
       <div className="mt-[-4rem] w-[80%] bg-stone-200 p-5 ml-auto mb-16 md:w-[50%] lg:w-[30%] lg:mt-[-20rem]">
         <h1 className="text-5xl py-5 text-black">About Us</h1>
         <p className="text-3xl">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          Our music band provides high-energy, entertaining performances for a
+          variety of events and occasions. With a repertoire spanning multiple
+          genres, we are dedicated to getting the party started and keeping it
+          going all night long.
         </p>
-        <button className="text-2xl tracking-wider border-2 border-black py-2 my-2 px-16 cursor-pointer font-semibold hover:text-white hover:bg-black">
-          LEARN MORE
-        </button>
       </div>
       <div className="p-5 md:px-32 lg:px-80 lg:mt-14">
         <Image

@@ -6,8 +6,8 @@ export default function HeroContext() {
     <div className="w-full px-5 my-auto">
       <div className="w-full text-gray-900">
         <h1 className="mt-8 md:mt-0 text-[4rem] md:text-[5rem] lg:text-[7rem] leading-none">
-          SAMPLENAME <br />
-          CATEGORY
+          REGAVANA <br />
+          BAND
         </h1>
         <p className="text-2xl md:text-3xl">
           <i>We have everything to make your event bright!</i>
