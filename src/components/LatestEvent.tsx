@@ -28,7 +28,7 @@ export default function LatestEvents() {
 
   return (
     <div id="event" className="w-full bg-[#292e33] px-4 py-8">
-      <h1 className=" text-white text-4xl md:text-7xl">Category Section</h1>
+      <h1 className=" text-white text-4xl md:text-7xl">Latest Events</h1>
       {dataState.length <= 0 && <Loader />}
       {dataState
         .slice(0)
