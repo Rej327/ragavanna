@@ -13,7 +13,7 @@ export default function Navigation() {
 
   return (
     <div className="w-full flex justify-between py-4">
-      <h1 className="text-2xl">Name</h1>
+      <h1 className="text-2xl">REGAVANA BAND</h1>
       <GiHamburgerMenu
         onClick={handleNav}
         className="text-3xl cursor-pointer"
