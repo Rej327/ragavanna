@@ -27,16 +27,6 @@ export default function ContactUs() {
           </a>
         </p>
       </div>
-      <div className="px-10 mx-auto max-w-[30rem] md:flex gap-2   ">
-        <input
-          name="text"
-          placeholder="Email"
-          className="w-full text-lg font-sans p-2 my-2 text-stone-500 outline-red-500"
-        />
-        <button className="my-2 w-full sm:w-fit text-lg text-white tracking-wider border-2 border-white py-2 p-4 cursor-pointer font-semibold hover:text-red-500 hover:bg-white">
-          MORE
-        </button>
-      </div>
     </div>
   );
 }

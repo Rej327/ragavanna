@@ -1,5 +1,7 @@
 import Smallcircle from "@/app/styleDiv/Smallcircle";
 import { heroData } from "../data/data";
+import { TbBrandMessenger } from "react-icons/tb";
+import Link from "next/link";
 
 export default function HeroContext() {
   return (
@@ -15,9 +17,14 @@ export default function HeroContext() {
       </div>
       {heroData.map((herodata, index) => (
         <div key={index} className="mt-10">
-          <p className="text-2xl font-extrabold text-gray-900 tracking-wider my-2">
-            {herodata.name}
-          </p>
+          <Link href={herodata.link} target="_blank" rel="noreferrer">
+            <div className="flex">
+              <p className="text-2xl font-extrabold text-gray-900 tracking-wider my-2 hover:underline">
+                {herodata.name}
+              </p>
+              <TbBrandMessenger className="text-gray-700 text-xl" />
+            </div>
+          </Link>
           <p className="text-2xl font-bold text-red-500 tracking-wider my-2">
             {herodata.email}
           </p>

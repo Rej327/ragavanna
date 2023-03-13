@@ -2,6 +2,7 @@ type heroDataProps = {
   name: string;
   email: string;
   number: string;
+  link: string;
 };
 
 export const heroData: heroDataProps[] = [
@@ -9,12 +10,14 @@ export const heroData: heroDataProps[] = [
     name: "Gerard Vincent Lorca",
     email: "gerardvincentlorca@gmail.com",
     number: "(+63)-961-502-9597",
+    link: "https://www.facebook.com/gerardvincent.lorca",
   },
 
   {
     name: "Mae Angelou Holgado",
     email: "maeangeloubinay14@gmail.com",
     number: "(+63)-945-662-2099",
+    link: "https://www.facebook.com/chibimae14",
   },
 ];
 
