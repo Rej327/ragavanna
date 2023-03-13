@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import LoaderEvent from "../styleDiv/LoaderEvent";
 
 async function getPosts() {
-  const res = await fetch("http://localhost:3000/api/getPosts");
+  const res = await fetch("/api/getPosts");
   if (res.ok) {
     console.log();
   }
