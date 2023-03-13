@@ -1,7 +1,7 @@
 export default function ContactUs() {
   return (
     <div className="w-full text-center bg-red-500 py-20">
-      <h1 className="text-7xl text-white">Reach Out To Us</h1>
+      <h1 className="text-5xl text-white">Reach Out To Us</h1>
       <div className="py-4 sm:flex gap-10 max-w-[25rem] mx-auto">
         <p className="underline underline-offset-8 text-4xl py-5 text-white hover:no-underline hover:text-stone-200 w-fit mx-auto">
           <a
