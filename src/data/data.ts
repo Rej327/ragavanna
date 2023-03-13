@@ -13,8 +13,8 @@ export const heroData: heroDataProps[] = [
 
   {
     name: "Mae Angelou Holgado",
-    email: "sample@gmail.com",
-    number: "(+63)-999-999-9999",
+    email: "maeangeloubinay14@gmail.com",
+    number: "(+63)-945-662-2099",
   },
 ];
 

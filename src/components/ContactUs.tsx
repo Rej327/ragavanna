@@ -13,7 +13,7 @@ export default function ContactUs() {
           </a>
         </p>
         <p className="underline underline-offset-8 text-4xl py-5 text-white hover:no-underline hover:text-stone-200 w-fit mx-auto">
-          <a href="tel:09999999999" target="_blank" rel="noreferrer">
+          <a href="tel:09456622099" target="_blank" rel="noreferrer">
             Phone
           </a>
         </p>
