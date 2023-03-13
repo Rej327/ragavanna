@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 async function getPosts() {
-  const res = await fetch("http://localhost:3000/api/getPosts");
+  const res = await fetch("http://regavana.vercel.app/api/getPosts");
   if (res.ok) {
     console.log();
   }
