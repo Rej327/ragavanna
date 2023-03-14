@@ -4,7 +4,7 @@ export default function HeroImg() {
   return (
     <div className="w-full">
       <Image
-        src="/hero-image.jpeg"
+        src="/hero-image.jpg"
         width={500}
         height={500}
         alt="Band Image"
