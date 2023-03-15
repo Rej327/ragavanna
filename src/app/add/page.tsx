@@ -28,7 +28,7 @@ export default function Add() {
 
   const [keyPass, setKeyPass] = useState("");
 
-  const hiddenKey = "ReGavannA";
+  const hiddenKey = "ReGavanA";
   if (hiddenKey === keyPass) {
     return (
       <form
