@@ -31,8 +31,8 @@ export default function LatestEvents() {
       <h1 className=" text-white text-4xl md:text-7xl">Latest Events</h1>
       {dataState.length <= 0 && <Loader />}
       {dataState
-        .reverse()
-        .slice(0, 3)
+        .slice(0, 3) // Limit the number of elements
+        .reverse() // Reverse the array
         .map((ltsEvent) => (
           <div key={ltsEvent.id} className="md:flex px-2 my-4 py-8">
             <Image
